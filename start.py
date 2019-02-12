@@ -2,7 +2,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.options
 
-tornado.options.define("port", default=9999, help="Run on the given port", type=int)
+tornado.options.define("port", default=80, help="Run on the given port", type=int)
 
 class TestHandler(tornado.web.RequestHandler):
     def get(self):
